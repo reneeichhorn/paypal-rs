@@ -374,6 +374,8 @@ pub struct CaptureStatusDetails {
 #[derive(Debug, Serialize, Deserialize, Eq, PartialEq, Copy, Clone, Builder)]
 #[builder(setter(strip_option))]
 pub struct Capture {
+    /// The PayPal-generated ID for the capture.
+    pub id: String,
     /// The status of the captured payment.
     pub status: CaptureStatus,
     /// The details of the captured payment status.
