@@ -371,7 +371,7 @@ pub struct CaptureStatusDetails {
 
 /// A captured payment.
 #[skip_serializing_none]
-#[derive(Debug, Serialize, Deserialize, Eq, PartialEq, Copy, Clone, Builder)]
+#[derive(Debug, Serialize, Deserialize, Eq, PartialEq, Clone, Builder)]
 #[builder(setter(strip_option))]
 pub struct Capture {
     /// The PayPal-generated ID for the capture.
