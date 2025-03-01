@@ -809,7 +809,7 @@ pub struct PaypalPaymentSourceResponse {
     /// The name of the payer.
     pub name: PayerName,
     /// The email address of the payer.
-    pub email_address: String,
+    pub email_address: Option<String>,
     /// The account id of the payer.
     pub account_id: String,
 }
